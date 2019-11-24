@@ -1,24 +1,33 @@
 # Contacts Project
 
-This repo is a code-along with the first project in the [React Nanodegree program](https://www.udacity.com/course/react-nanodegree--nd019).
+This contacts app allows us to maintain a list of contacts. Each of the contacts include further details like avatar pic, name as well as username. We can search, delete and add new contacts. This project was built along while I was learning React from Udacity. The concepts involved while building this project include rendering UI, state management, lifecycle events and react router. 
 
-Most of the commits in this repository correspond to videos in the program.
+## Component Hierarchy
 
-## Project Setup
-
-- Clone the project - `git clone https://github.com/udacity/reactnd-contacts-complete.git`
-- Install the dependencies - `npm install`
+```
+|- App
+|- CreateContact # This component renders the '/create' page of the app.
+|- ListContacts # This component renders the '/' page of the app.
+```
 
 ## Backend Server
 
-The backend server for this in-class project can be found [here](https://github.com/udacity/reactnd-contacts-server).
+For this application, the backend server for this in-class project can be found [here](https://github.com/sitansusubudhi/reactnd-contacts-server). The library file [`ContactsAPI.js`](src/utils/ContactsAPI.js) contains the below methods to perform necessary operations on the backend:
 
-## Contributing
+* [`getAll`]
+* [`create`]
+* [`remove`]
 
-Because this is a code-along project and the commits correspond to specific videos in the program, we will not be accepting pull requests.
+The library file [`ImageInput.js`] is used to read and resize image files before submitting them to the server as data URLs. This is also used to show a preview of the image.
 
-If you feel like there's a major problem, please open an issue to discuss the problem and potential resolution.
+## View project locally
 
-## License
+To view the project in your local machine:
 
-MIT
+* clone this repository using `git clone `
+* install all project dependencies with `npm install`
+* start the development server with `npm start`
+
+
+
+
