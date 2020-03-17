@@ -9,7 +9,8 @@ class App extends Component {
     contacts: []
   }
   componentDidMount() {
-    ContactsAPI.getAll()
+    // ContactsAPI.getAll()
+    ContactsAPI.getAllContacts()
       .then((contacts) => {
         this.setState(() => ({
           contacts
@@ -23,11 +24,12 @@ class App extends Component {
       })
     }))
 
-    ContactsAPI.remove(contact)
+    // ContactsAPI.remove(contact)
   }
   createContact = (contact) => {
     ContactsAPI.create(contact)
       .then((contact) => {
+        console.log(contact);
         this.setState((currentState) => ({
           contacts: currentState.contacts.concat([contact])
         }))
