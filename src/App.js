@@ -38,17 +38,17 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Route exact path='/' render={() => (
+        <Route exact path={process.env.PUBLIC_URL + '/'} render={() => (
           <ListContacts
             contacts={this.state.contacts}
             onDeleteContact={this.removeContact}
           />
         )} />
-        <Route path='/create' render={({ history }) => (
+        <Route path={process.env.PUBLIC_URL + '/create'} render={({ history }) => (
           <CreateContact
             onCreateContact={(contact) => {
               this.createContact(contact)
-              history.push('/')
+              history.push(process.env.PUBLIC_URL + '/')
             }}
           />
         )} />

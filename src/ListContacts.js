@@ -39,7 +39,7 @@ class ListContacts extends Component {
             onChange={(event) => this.updateQuery(event.target.value)}
           />
           <Link
-            to='/create'
+            to={process.env.PUBLIC_URL + '/create'}
             className='add-contact'
           >Add Contact</Link>
         </div>

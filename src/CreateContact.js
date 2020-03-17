@@ -17,7 +17,7 @@ class CreateContact extends Component {
       <div>
         <Link
           className='close-create-contact'
-          to='/'>
+          to={process.env.PUBLIC_URL + '/'}>
             Close
         </Link>
         <form onSubmit={this.handleSubmit} className='create-contact-form'>
