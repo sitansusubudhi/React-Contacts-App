@@ -4,7 +4,7 @@ This contacts app allows us to maintain a list of contacts. Each of the contacts
 
 Funcionality to store the new contact and deleting the contact permanently using localStorage is yet to be developed.
 
-The project is also hosted using GitHub pages at [React-Contacts-App](https://sitansusubudhi.github.io/React-Contacts-App/)
+The project is hosted at Netlify at [React-Contacts-App-Netlify](https://reactnd-contacts-app.netlify.com/) and also using GitHub Pages at [React-Contacts-App-GitHub](https://sitansusubudhi.github.io/React-Contacts-App/)
 
 ## Component Hierarchy
 
